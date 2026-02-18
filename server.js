@@ -4,30 +4,35 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware to serve static files (CSS)
+// Serve static files
 app.use(express.static(path.join(__dirname, "public")));
 
-// Route: Home (ROOT FIXED)
+// ✅ Root route (THIS FIXES YOUR ISSUE)
 app.get("/", (req, res) => {
     res.status(200).sendFile(path.join(__dirname, "webpages", "home.html"));
 });
 
-// Route: About
+// Home route
+app.get("/home", (req, res) => {
+    res.status(200).sendFile(path.join(__dirname, "webpages", "home.html"));
+});
+
+// About route
 app.get("/about", (req, res) => {
     res.status(200).sendFile(path.join(__dirname, "webpages", "aboutus.html"));
 });
 
-// Route: Contact
+// Contact route
 app.get("/contact", (req, res) => {
     res.status(200).sendFile(path.join(__dirname, "webpages", "contactus.html"));
 });
 
-// 404 Error Handling (MUST BE LAST)
+// 404 handler (KEEP LAST)
 app.use((req, res) => {
     res.status(404).sendFile(path.join(__dirname, "webpages", "error.html"));
 });
 
-// Start Server
+// Start server
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
