@@ -43,7 +43,7 @@ https://server-rnyy.onrender.com
 ![About Page](screenshots/about.png)
 
 ### Contact Page (/contact)
-![Contact Page](screenshots/contact.png)
+![Contact Page](screenshots/Contact.png)
 
 ### 404 Error Page (Invalid Route)
-![404 Page](screenshots/error.png)
+![404 Page](screenshots/404.png)
