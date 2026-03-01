@@ -37,13 +37,13 @@ https://server-rnyy.onrender.com
 ## Screenshots
 
 ### Home Page (/)
-[Home Page](screenshots/home.png)
+[Home Page](screenshots/HomePage.png)
 
 ### About Page (/about)
-[About Page](screenshots/about.png)
+[About Page](screenshots/AboutUs.png)
 
 ### Contact Page (/contact)
-[Contact Page](screenshots/Contact.png)
+[Contact Page](screenshots/ContactUs.png)
 
 ### 404 Error Page (Invalid Route)
 [404 Page](screenshots/404.png)
